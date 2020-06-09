@@ -1,26 +1,23 @@
-//Залогиниться для того, чтобы можно было создавать сборку с настройками по умолчанию (--yes, -y)
-//npm config set init.author.name "YOUR NAME"
-//npm config set init.author.email "YOUR_EMAIL"
-
-//Если кастомный скрипт наз. не "start" и не "test" - то \то "npm run ...", если "start" или "test" - то просто "npm start" и "npm test"
-
 {
   "name": "node",
   "version": "1.0.0",
-  "description": "",
-  "main": "test.js",
+  "description": "My first project",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./js/test.js"
-    //если нужно запустить несколько файлов - добавить &&:   "start": "node ./js/test.js && node qweqwe"
+    "start": "node ./js/app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ternprojects/node.git"
   },
-  "author": "",
+  "author": "Y.Tern",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ternprojects/node/issues"
   },
-  "homepage": "https://github.com/ternprojects/node#readme"
+  "homepage": "https://github.com/ternprojects/node#readme",
+  "dependencies": {
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {}
 }
