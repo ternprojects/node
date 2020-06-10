@@ -2,9 +2,10 @@
   "name": "node",
   "version": "1.0.0",
   "description": "My first project",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./js/app.js"
+    "start": "node app.js",
+    "build": "babel ./src/app.js -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "dependencies": {
     "shortid": "^2.2.15"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "uuid": "^8.1.0"
+  }
 }
